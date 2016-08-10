@@ -1,10 +1,11 @@
 <html>
 <head>
     <title>
-        Home
+        Daidas Beauty - Home
     </title>
+    <link rel="stylesheet" type="text/css" href="style_d.css" />
+    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
-<link rel="stylesheet" type="text/css" href="style_d.css" />
 <body background="images/bg.jpg">
     <div class="page">
         <div align="center">
@@ -44,19 +45,31 @@
             var slideIndex = 0;
             carousel();
 
+            var opacity = 0;
+            var a, b;
+            function swop() {
+                opacity += 0.05;
+                if (opacity > 1) opacity = 1;
+                a.style.opacity = opacity;
+                b.style.opacity = 1 - opacity;
+                if (opacity < 1) {
+                    window.setTimeout( swop, 15);
+                }
+            }
+
             function carousel() {
-                var i;
                 var x = document.getElementsByClassName("mySlides");
-                console.log(x)
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
                 slideIndex++;
-                if (slideIndex > x.length) {
-                    slideIndex = 1
+                if (slideIndex >= x.length) {
+                    slideIndex = 0
                 }
-                x[slideIndex - 1].style.display = "block";
-                setTimeout(carousel, 2500); // Change image every 2.5 seconds
+                prev = slideIndex - 1;
+                if (prev < 0) prev = x.length - 1;
+                opacity = 0;
+                a = x[slideIndex];
+                b = x[prev];
+                swop();
+                window.setTimeout(carousel, 5000); // Change image every 5 seconds
             }
         </script>
         <!--end of slide show script -->
@@ -88,9 +101,9 @@
         </p>
         <table class="bottom-table">
             <tr>
-                <td>Nails</td>
+                <td>Make Up</td>
                 <td><div class="pile"></div></td>
-                <td style="color: #8b2d5f">Make Up</td>
+                <td style="color: #8b2d5f">Nails</td>
                 <td><div class="pile"></div></td>
                 <td>Eyelashes</td>
                 <td><div class="pile"></div></td>
