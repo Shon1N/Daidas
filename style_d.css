@@ -1,0 +1,96 @@
+body {
+	line-height: 1;
+  margin: 0;
+	padding: 0;
+	border: 0;
+   margin-bottom: 0;
+background-attachment: fixed;
+line-height : 1.5em;
+background-repeat: repeat;
+}
+
+ul li {
+  display: inline-block;
+
+}
+
+.drop {
+width: 200px;
+height: auto;
+position: absolute;
+z-index: 5;
+top: 14px;
+left: -74px;
+visibility: hidden;
+
+}
+
+.drop ul{
+orientation: vertical;
+}
+
+.drop li{
+padding: 10px;
+cursor: pointer;
+width: 160px;
+
+}
+
+.drop li:hover{
+  background-color:;
+}
+
+#navigation_button td{
+  text-align : center;
+  line-height : 50px;
+  position: relative;//reletiuve;
+}
+
+#navigation_button td a {
+  color : black;
+  height : 100%;
+
+
+}
+#navigation_button td:hover{
+}
+
+#navigation_button td:hover .drop{
+visibility: visible;
+}
+#navigation_button td a:link{
+  text-decoration : none;
+
+
+}
+#navigation_button td a:visited{
+  text-decoration : none;
+
+
+}
+#navigation_button td a:hover{
+  text-decoration : none;
+
+
+}
+#navigation_button td a:active{
+  text-decoration : none;
+
+
+}
+
+.Ref_point li a:link {
+	text-decoration : none;
+}
+.Ref_point li a {
+color: white;
+}
+.Ref_point li a:hover {
+  color: black;
+}
+.Ref_point li a:visited {
+  text-decoration : none;
+}
+.Ref_point li a:active {
+  text-decoration : none;
+}
