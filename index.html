@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>
+        Home
+    </title>
+</head>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="style_d_danie.css" />
+<<body background="images/bg.jpg">
+    <div class="page">
+        <div align="center">
+            <img src="images/lg.png" />
+        </div>
+        <br />
+        <div class="menu">
+            <table>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td id="menu-services">
+                        <a href="services.html">Services</a>
+                        <div class="dropdown">
+                            <ul>
+                                <a href="nails & make up.html"><li>Nails & Make Up</li></a>
+                                <a href=" eyelashes and facials.html"><li>Eyelashes & Facials</li></a>
+                                <a href="massages and waxing.html"><li>Massaging & Waxing</li></a>
+                            </ul>
+                        </div>
+                    </td>
+                    <td><a href="school.html">Beauty School</a></td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="breakLine"></div>
+        <div class="slideShow">
+            <img class="mySlides" src="slide/ff3.jpg">
+            <img class="mySlides" src="slide/ff1.jpg">
+            <img class="mySlides" src="slide/ff5.jpg">
+            <img class="mySlides" src="slide/ff2.jpg">
+            <img class="mySlides" src="slide/ff4.jpg">
+        </div>
+
+        <!-- java script for slide show -->
+        <script>
+        var slideIndex = 0;
+        carousel();
+
+        var opacity = 0;
+        var a, b;
+        function swop() {
+            opacity += 0.05;
+            if (opacity > 1) opacity = 1;
+            a.style.opacity = opacity;
+            b.style.opacity = 1 - opacity;
+            if (opacity < 1) {
+                window.setTimeout( swop, 15);
+            }
+        }
+
+        function carousel() {
+            var x = document.getElementsByClassName("mySlides");
+            slideIndex++;
+            if (slideIndex >= x.length) {
+                slideIndex = 0
+            }
+            prev = slideIndex - 1;
+            if (prev < 0) prev = x.length - 1;
+            opacity = 0;
+            a = x[slideIndex];
+            b = x[prev];
+            swop();
+            window.setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    </script>
+        </script>
+        <!--end of slide show script -->
+        <div class="arrow">
+            <div class="leftArrow"></div>
+            <div class="dbBlock"></div>
+            <div class="rightArrow"></div>
+        </div>
+  <div class="content">
+        <p style="color: gray">
+            Daidas Beauty is there to provide you the best in everything Beauty.  Bring out the confident you and
+            spoil yourself to one of our range of services. We specialise is Nails, Make Up, Eyelashes, Massages,
+            Waxing and we provide you with the best in beauty products <b>( Hannon, PNB, WOW, Livine and LCN)</b> to name a few.
+        </p>
+        <p style="color: #8b2d5f">
+            We are located in Louis Trichardt, Limpopo province South Africa. We have been giving every individual, group
+            or family the best in beauty treatments to make them feel good and confident about themselves.
+            Feeling and looking beautiful is what drives us.
+        </p>
+        <p style="color: gray">
+            You can make an appointment to receive a beauty treatment for yourself or buy a loved one, special friend
+            or colleague a voucher to treat them to something special.
+        </p>
+        <p style="color: #8b2d5f">
+            Keep your eyes peeled because we are going to be sharing ALL our secrets and giving you the joys of
+            doing it yourself and learning all the beauty tricks.  Our beauty school will be focused on giving you
+            first hand training and giving you certification of all the courses you have completed through Daidas
+            School of Beauty.
+        </p></div>
+        <table class="bottom-table">
+            <tr>
+                <td>Make Up</td>
+                <td><div class="pile"></div></td>
+                <td style="color: #8b2d5f">Nails</td>
+                <td><div class="pile"></div></td>
+                <td>Eyelashes</td>
+                <td><div class="pile"></div></td>
+                <td style="color: #8b2d5f">Massages</td>
+                <td><div class="pile"></div></td>
+                <td>Waxing</td>
+            </td>
+        </table>
+
+        <div class="breakLine"></div>
+
+        <div class="footer">
+            <div class="arrow white">
+                <div class="leftArrow"></div>
+                <div class="dbBlock"></div>
+                <div class="rightArrow"></div>
+            </div>
+            <div class="footerLinks">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="school.html">Beauty School</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2016 - Daidas Beauty. All Rights Reserved
+            </div>
+        </div>
+    </div>
+</body>
+</html>
