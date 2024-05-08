@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="material-kit-master/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="material-kit-master/assets/img/lgc.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Daidas Beauty
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="material-kit-master/assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <!-- <link href="material-kit-master/assets/demo/demo.css" rel="stylesheet" /> -->
+      <!--   Core JS Files   -->
+      <script src="material-kit-master/assets/js/core/jquery.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/plugins/moment.min.js"></script>
+      <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+      <script src="material-kit-master/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+      <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+      <script src="material-kit-master/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+      <!--  Google Maps Plugin    -->
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="material-kit-master/assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+</head>
+
+<body class="landing-page sidebar-collapse">
+    <style>
+table {
+    font-family: Arial !important;
+    font-weight: lighter !important;
+}
+
+        .CompanySlogan {
+        color: #000;
+        background-color: #fff;
+        opacity: 60%;
+        float: right;
+        margin-top: 21px;
+        margin-left: 37px;
+        font-weight: bold;
+        max-width: 334px;
+        font-family: Arial;
+        font-size: 10px;
+        }
+
+        .navbar .navbar-brand {
+        position: relative;
+        color: inherit;
+        height: 50px;
+        font-size: 1.125rem;
+        line-height: 30px;
+        padding: 0.625rem 0;
+        margin-top: -67px !important;
+        }
+
+        .navbar {
+        border: 0;
+        border-radius: 3px;
+        padding: 0.625rem 0;
+        margin-bottom: 20px;
+        color: #555;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+        height: 118px !important;
+        }
+
+.prices.first{
+    margin-top: 125px;
+}
+        .prices{
+          background-color: #fff;
+          background-image:
+          linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+          linear-gradient(#eee .1em, transparent .1em);
+          background-size: 100% 1.2em;
+        }
+
+        /* .container.body{
+            margin-top: 900px;
+        } */
+
+        @media only screen and (max-width: 1199px) and (min-width: 992px) {
+          .CompanySlogan {
+            color: #000;
+            background-color: #fff;
+            opacity: 60%;
+            float: right;
+            margin-top: -41px;
+            margin-left: 37px;
+            font-weight: bold;
+            max-width: 334px;
+            font-family: Arial;
+            font-size: 8px;
+          }
+        }
+
+        @media only screen and (max-width: 535px) {
+        .CompanySlogan {
+        color: #000;
+        /* background-color: #fff;
+        opacity: 60%; */
+        float: right;
+        margin-top: 2px;
+        margin-left: 12px;
+        font-weight: bold;
+        /* max-width: 334px; */
+        font-family: Arial;
+        font-size: 7px;
+        width: 154px;
+        }
+        }
+        
+        /* @media only screen and (max-width: 360px) {
+        .container.body {
+        margin-top: 950px;
+        }
+        } */
+
+        html,body{
+        height: 100%
+        }
+
+
+            .navbar.navbar-transparent {
+            background-color: transparent !important;
+            box-shadow: none;
+            padding-top: 25px;
+            color: #000;
+            }
+            .content{
+                margin-top: 100px;
+            }
+
+            .overlayPage {
+            background-color: #f9f9f9;
+            /* width: 850px; */
+            /* margin: 25px; */
+            box-shadow: 1px 1px 2px 2px #ccc;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            }
+
+            .overlayPage p{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 21px;
+            font-family: Arial;
+            padding-left: 50px;
+            padding-right: 50px;
+            }
+
+            .table-school {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: arial;
+            font-weight: bold;
+            color: gray;
+            }
+
+           .table-school td:first-child {
+            text-align: center !important;
+            }
+
+            .content  h3 {
+            font-family: Arial;
+            text-align: center;
+            }
+
+            @media (max-width: 991px)
+            {
+            .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
+            background-color: #000;
+            }
+          }
+
+              .navbar.navbar-transparent {
+              background-color: white !important;
+              box-shadow: none;
+              padding-top: 25px;
+              color: #000;
+              }
+    </style>
+    <div class="allContainer">
+        <script>
+            $('.allContainer').height($(document).height());
+    </script>
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="material-kit-master/assets/img/lgc.png"></img>
+            <div class="CompanySlogan">
+                MAKE UP | NAILS | EYELASHES | FACIALS <br />
+                MASSAGES | WAXING | MICROBLADING
+            </div>
+            <div>
+                Daidas Beauty
+            </div>
+            <!-- <div>MAKE UP | NAILS | EYELASHES | MASSAGES | WAXING | MICROBLADING</div> -->
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                Services & Prices
+              </a>
+              <div class="dropdown-menu dropdown-with-icons">
+                <a href="nails_and_make_up.html" class="dropdown-item">
+                  NAILS & MAKE UP
+                </a>
+                <a href="eyelashes_and_facials.html" class="dropdown-item">
+                  EYELASHES & FACIALS
+                </a>
+                <a href="massages_and_waxing.html" class="dropdown-item">
+                  MASSAGES & WAXING
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beauty_school.html" >
+                BEAUTY SCHOOL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" >
+                GALLERY
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-form" >
+                CONTACT US
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://daidasbeauty.co.za/shop" >
+                SHOP
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim"  data-original-title="Follow us on Twitter" rel="nofollow">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/daidasbeauty"  data-original-title="Like us on Facebook" rel="nofollow">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/daidasbeauty"  data-original-title="Follow us on Instagram" rel="nofollow">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/channel/UCkKbX3R9-A_g_CAF3aOUDow"  data-original-title="Subscribe to our YouTube" rel="nofollow">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+              <div class="prices" data-parallax="true">
+                <div class="container body">
+                  <div class="row">
+
+                    <div class="content">
+                        <div class="overlayPage">
+                            <h3><font color="gray">Why PNB Training?</font></h3>
+                            <p>
+                                Professional Nail & Beauty Acadamy is proud to be a memeber of APPETD. PNB Acadamy's comprehensive courses will enhance the student to master the techniques and the skills of nail and beauty applications. This will include intensive theory and practical
+                                training. Intensive training ensures that the student is capable and confident to achieve their full potential and to be able to continue on their own or in a professional salon environment. Students will be issued with a certificate
+                                once competency evaluation has been completed and achieved. All courses include a professional training kit and full course manual.
+                            </p>
+                        </div>
+                        <h3><font color="8b2d5f">All Beauty Training Courses</font></h3>
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <tr>
+                                    <td>Acrylic Liquid Course(4 days)</td>
+                                    <td>R 5300</td>
+                                </tr>
+                            </table>
+                            <p>
+                                The course includes everything you will need to learn about acrylic nails. You will learn to produce the perfect combination of acrylic lyquid and powder and apply it to the different areas of the nail with a brush. By combining acrylic liquid
+                                and powder a strong flexible overlay can be produced. This versatile overlay can be applied to the natural nail tip: it can also be sculpted over a form.
+                            </p>
+                        </div>
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <tr>
+                                    <td>Acrylic Dip Course(2 days)</td>
+                                    <td>R 3500</td>
+                                </tr>
+                            </table>
+                            <p>
+                                One of the latest advancements in nail technology. The dip System includes a combination of Resin and Acrylic to quickly create nails that are durable, strong and flexible. This system is suitable for all nail types.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>UV Gel Course(3 Days)</td>
+                                <td>R 4500</td>
+                            </table>
+                            <p>
+                                Gel is the latest innovation in the fast-growing nail industry. Gel is slightly easier to apply than acrylic because you do not have to mix powder and liquid. It is odour free and hardwearing. A wide range of gels are available to suit the needs of both
+                                the client and the technician.<br />Course includes a 36W gel lamp.
+                            </p>
+                        </div>
+                       <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Gel Polish (1 day)</td>
+                                <td>R 2300</td>
+                            </table>
+                            <p>
+                                Gel Polish is the latest innovation in the fast-growing nail industry.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Complete Nail Course (8 days)</td>
+                                <td>R 10000</td>
+                            </table>
+                            <p>
+                                Includes:<b> Gel, Gel Sculpture, Gel Polish, Acrylic Liquid, Acrylic Sculpture, Acrylic Reverse, Acrylic Dip, Silk & Fiber.</b>
+                                A comprehensive course combining all the nail systems.
+                                <br />Course includes a 36W gel lamp.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Facials (5 days)</td>
+                                <td>R 5500</td>
+                            </table>
+                            <p>
+                                This is a very substantial stand-alone course. Your imagination is the limit once you have mastered the basic techniques. Although new products and techniques are released on a regular basis, the basics of this course will remain stable.
+                                You will always need to know how to analyse skin, how to do cleansing massages, facial steaming to extract impurities, facial massage techniques and apply masks. We will teach you how to do everything from the most basic to the most professional facial treatments.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Make-Up (2 days)</td>
+                                <td>R 5500</td>
+                            </table>
+                            <p>
+                                Enter the world of professional make up artistry, and discover the many possibilities of this industry! Offer Make-Up packages to Bridal Parties, year end functions, work at Modelling Events - the possibility are endless.
+                                This course teaches you to do professional day make-up, evening make-up, and bridal make-up.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Manicure & Pedicure (2 days)</td>
+                                <td>R 3600</td>
+                            </table>
+                            <p>
+                                A wonderful cosmetic treatment of the hands & feet involving cutting, shaping, skin-exfoliation and softening, removal of the cuticles, and even painting of the nails. In this course you will learn how to identify nail diseases & disorders, about the
+                                anatomy of the hands & feet, how to perform manicure & pedicure treatents, different massaging techniques, how to do a client consultation, and most importantly, hygene.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Full Body Massage (2 days)</td>
+                                <td>R 4000</td>
+                            </table>
+                            <p>
+                                The systematic manipulation of soft tissue, otherwise known as massage. This does not only help relieve sore muscles and help you to relax, but includes a host of health benefits. In this course we will introduce you to the full body massage that will include
+                                the following: <b>front legs, back legs, abdomen, arms, facial, back and neck massages</b>.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Waxing, Tinting & Shaping (1 day)</td>
+                                <td>R 5000</td>
+                            </table>
+                            <p>
+                                The waxing course covers all areas of the face and body waxing, including: <b>leg waxing, bikini waxing, underarms,
+                                facial hair, and eyebrow waxing</b>. You will also learn how to do Hot Waxing. Waxing is one of the most popular salon treaatments for which clients return every six weeks. The wax is a natural product which permits fast, effective and almost
+                                painless removal of all superfluous hair
+                                Eyebrow and eyelash tinting will enhance the general appearence of your eyes and is particularly beneficial for people with light hair or very little hair on their brows and lashes. This is a straight forward, quick and painless procedure using vegetable
+                                dye to tint. A range of colours are available to choose from to enhance eyebrows & lashes. This course teaches you all the tecniques used to tint and shape eyebrows.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                            <table class="table-school">
+                                <td>Lasting Lashes (2 days)</td>
+                                <td>R 5000</td>
+                            </table>
+                            <p>
+                                A market leader in eyelash extentions. Lasting Lashes are semi-permanent, lasting up to between 14 and 90 days with regular maintenance. Eyelash extensions provide thickness and length to the natural eyelashes, thus enhancing the charm and appeal of your eyes.
+                            </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                          <table class="table-school">
+                            <td> Conversion Certificate</td>
+                            <td>R 1500</td>
+                          </table>
+                          <p>
+                            This course enables you to switch from your current instutution to a registered PNB certification.
+                             The therapist must supply all necessary products.
+                              The trainer will assist the therapist to purchase all the necessary products in the shop
+                          </p>
+                        </div>
+            
+                        <div class="overlayPage">
+                          <table class="table-school">
+                            <td>Nail Workshop</td>
+                            <td>R 1100</td>
+                          </table>
+                          <p>
+                            All nail systems can be offered as a workshop. Students don't need any former training.
+                            Students must bring all the relevent products on the training day. The trainer will assist the students to purchase the necessary products
+                            in the shop.
+                          </p>
+                        </div>
+            
+                    </div>
+  
+            </div>
+        </div>
+      </div>          
+
+    <div>
+    <footer class="footer footer-default">
+      <div class="container">
+        <div class="copyright float-right">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <a href="#" >Daidas Beauty</a>
+        </div>
+      </div>
+    </footer>
+    </div>
+    </div>
+    <script src="//code.tidio.co/l1rsewehp8jv6bwzgqysm4ypazxjj0jq.js" async></script>
+  </body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="material-kit-master/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="material-kit-master/assets/img/lgc.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Daidas Beauty
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="material-kit-master/assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <!-- <link href="material-kit-master/assets/demo/demo.css" rel="stylesheet" /> -->
+      <!--   Core JS Files   -->
+      <script src="material-kit-master/assets/js/core/jquery.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/plugins/moment.min.js"></script>
+      <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+      <script src="material-kit-master/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+      <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+      <script src="material-kit-master/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+      <!--  Google Maps Plugin    -->
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="material-kit-master/assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+</head>
+
+<body class="landing-page sidebar-collapse">
+    <style>
+table {
+    font-family: Arial !important;
+    font-weight: lighter !important;
+}
+
+      .CompanySlogan {
+      color: #000;
+      background-color: #fff;
+      opacity: 60%;
+      float: right;
+      margin-top: 21px;
+      margin-left: 37px;
+      font-weight: bold;
+      max-width: 334px;
+      font-family: Arial;
+      font-size: 10px;
+      }
+
+        .navbar .navbar-brand {
+        position: relative;
+        color: inherit;
+        height: 50px;
+        font-size: 1.125rem;
+        line-height: 30px;
+        padding: 0.625rem 0;
+        margin-top: -67px !important;
+        }
+
+        .navbar {
+        border: 0;
+        border-radius: 3px;
+        padding: 0.625rem 0;
+        margin-bottom: 20px;
+        color: #555;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+        height: 118px !important;
+        }
+
+.prices.first{
+    margin-top: 125px;
+}
+        .prices{
+          background:    radial-gradient(#8A365C 3px, transparent 4px),
+          radial-gradient(#8A365C 3px, transparent 4px),
+          linear-gradient(#ffff 4px, transparent 0),
+          linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+          linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+          #fff;
+        }
+
+        /* .container.body{
+            margin-top: 900px;
+        } */
+
+        @media only screen and (max-width: 1199px) and (min-width: 992px) {
+          .CompanySlogan {
+            color: #000;
+            background-color: #fff;
+            opacity: 60%;
+            float: right;
+            margin-top: -41px;
+            margin-left: 37px;
+            font-weight: bold;
+            max-width: 334px;
+            font-family: Arial;
+            font-size: 8px;
+          }
+        }
+
+        @media only screen and (max-width: 535px) {
+          .CompanySlogan {
+            color: #000;
+            /* background-color: #fff;
+            opacity: 60%; */
+            float: right;
+            margin-top: 2px;
+            margin-left: 12px;
+            font-weight: bold;
+            /* max-width: 334px; */
+            font-family: Arial;
+            font-size: 7px;
+            width: 154px;
+          }
+        }
+        
+        /* @media only screen and (max-width: 360px) {
+        .container.body {
+        margin-top: 950px;
+        }
+        } */
+
+        html,body{
+        height: 100%
+        }
+
+
+            .navbar.navbar-transparent {
+            background-color: transparent !important;
+            box-shadow: none;
+            padding-top: 25px;
+            color: #000;
+            }
+
+            @media (max-width: 991px)
+            {
+            .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
+            background-color: #000;
+            }
+          }
+
+          .navbar.navbar-transparent {
+          background-color: white !important;
+          box-shadow: none;
+          padding-top: 25px;
+          color: #000;
+          }
+    </style>
+    <div class="allContainer">
+        <script>
+            $('.allContainer').height($(document).height());
+    </script>
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="material-kit-master/assets/img/lgc.png"></img>
+            <div class="CompanySlogan">
+                MAKE UP | NAILS | EYELASHES | FACIALS <br />
+                MASSAGES | WAXING | MICROBLADING
+            </div>
+            <div>
+                Daidas Beauty
+            </div>
+            <!-- <div>MAKE UP | NAILS | EYELASHES | MASSAGES | WAXING | MICROBLADING</div> -->
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                Services & Prices
+              </a>
+              <div class="dropdown-menu dropdown-with-icons">
+                <a href="nails_and_make_up.html" class="dropdown-item">
+                  NAILS & MAKE UP
+                </a>
+                <a href="eyelashes_and_facials.html" class="dropdown-item">
+                  EYELASHES & FACIALS
+                </a>
+                <a href="massages_and_waxing.html" class="dropdown-item">
+                  MASSAGES & WAXING
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beauty_school.html" >
+                BEAUTY SCHOOL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" >
+                GALLERY
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us" >
+                CONTACT US
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://daidasbeauty.co.za/shop" >
+                SHOP
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim"  data-original-title="Follow us on Twitter" rel="nofollow">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/daidasbeauty"  data-original-title="Like us on Facebook" rel="nofollow">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/daidasbeauty"  data-original-title="Follow us on Instagram" rel="nofollow">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/channel/UCkKbX3R9-A_g_CAF3aOUDow"  data-original-title="Subscribe to our YouTube" rel="nofollow">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="prices first" data-parallax="true">
+      <div class="container body">
+        <div class="row">
+            <table class="table table-dark" id="Tips_with_Acrylic_or_Gel">
+                <thead>
+                <th>Tips with Acrylic or Gel</th>
+                  <tr>
+                    <th scope="col">Treatment</th>
+                    <th scope="col"></th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        var Treatment = {"Tips with Acrylic or Gel":
+                        [
+                        {"French Tips (1hr)":"300.00"},
+                        {"Pearl Tips (1hr)":"320.00"},
+                        {"Colour Tips (1hr)":"320.00"},
+                        {"Natural Tips (1hr)":"350.00"},
+                        {"Stiletto Tips (1hr)":"350.00"},
+                        {"Tips with French Overlays (1hr)":"350.00"},
+                        {"Nails with Tips + Acrylic + Gel":"420.00"},
+                        ]}
+                            var obj = Treatment["Tips with Acrylic or Gel"];
+                            obj.forEach((element, i) => {
+                    console.log("obj", element);
+                    var key =  [Object.keys(obj[i])][0][0];
+                    $('#Tips_with_Acrylic_or_Gel tr:last')
+                    .after(
+                        '<tr>' +
+                        '<td>'+ key +'</td>' +
+                        '<td> R </td>' +
+                        '<td>'+ element[key] +'</td>' +
+                        '</tr>' 
+                        );     
+                 });
+
+                    </script>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+
+              <div class="prices" data-parallax="true">
+                <div class="container body">
+                  <div class="row">
+                    <table class="table table-dark" id="Overlays_With_Acrylic_colours_or_Gel_Colours">
+                <thead>
+                <th>Overlays - With Acrylic colours or Gel Colours</th>
+                  <tr>
+                    <th scope="col">Treatment</th>
+                    <th scope="col"></th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        var Treatment = {"Overlays - With Acrylic colours or Gel Colours":
+                        [{"Natural Nail Colour Overlay (1hr)":"300.00"},
+                        {"Smile Line - White Overlay (1hr)":"320.00"},
+                        {"Colour Overlay - Tip Application (1hr)":"350.00"},
+                        {"Natural Tips + French Tip Overlay (1hr)":"370.00"},
+                        {"Full Set Sculptured Nails (1hr 30min)":"450.00"},
+                        {"Tips, Acrylic & Gel Color Overlays":"420.00"},
+                        {"Tips, Acrylic & Nail Polish":"380.00"}
+                        ]
+                        }
+                            var obj = Treatment["Overlays - With Acrylic colours or Gel Colours"];
+                            obj.forEach((element, i) => {
+                    console.log("obj", element);
+                    var key =  [Object.keys(obj[i])][0][0];
+                    $('#Overlays_With_Acrylic_colours_or_Gel_Colours tr:last')
+                    .after(
+                        '<tr>' +
+                        '<td>'+ key +'</td>' +
+                        '<td> R </td>' +
+                        '<td>'+ element[key] +'</td>' +
+                        '</tr>' 
+                        );     
+                 });
+
+                    </script>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+              <div class="prices" data-parallax="true">
+                <div class="container body">
+                  <div class="row">
+              <table class="table table-dark" id="Nail_Art">
+                <thead>
+                <th>Nail Art</th>
+                  <tr>
+                    <th scope="col">Treatment</th>
+                    <th scope="col"></th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        var Treatment = {"Nail Art":
+                            [
+                            {"Nail art sticker (per finger)":"10.00"},
+                            {"Nail Art Stamp Disk":"20.00"},
+                            {"Nail Art with Rhinestones":"20.00"}
+                            ]}
+                            var obj = Treatment["Nail Art"];
+                            obj.forEach((element, i) => {
+                    console.log("obj", element);
+                    var key =  [Object.keys(obj[i])][0][0];
+                    $('#Nail_Art tr:last')
+                    .after(
+                        '<tr>' +
+                        '<td>'+ key +'</td>' +
+                        '<td> R </td>' +
+                        '<td>'+ element[key] +'</td>' +
+                        '</tr>' 
+                        );     
+                 });
+
+                    </script>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+              <div class="prices" data-parallax="true">
+                <div class="container body">
+                  <div class="row">
+              <table class="table table-dark" id="Maintenance_on_Gel_Acrylic">
+                <thead>
+                <th>Maintenance on Gel & Acrylic</th>
+                  <tr>
+                    <th scope="col">Treatment</th>
+                    <th scope="col"></th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        var Treatment = 
+                        {"Maintenance on Gel & Acrylic":
+                        [{"2 week fill on clear/french pink":"230.00"},
+                        {"2 week fill on colour & acrylic":"250.00"},
+                        {"2 Week fill with different colour on gel or acrylic":"280.00"},
+                        {"Nail Replacements":"40.00"}
+                        ]}                       
+                            var obj = Treatment["Maintenance on Gel & Acrylic"];
+                            obj.forEach((element, i) => {
+                    console.log("obj", element);
+                    var key =  [Object.keys(obj[i])][0][0];
+                    $('#Maintenance_on_Gel_Acrylic tr:last')
+                    .after(
+                        '<tr>' +
+                        '<td>'+ key +'</td>' +
+                        '<td> R </td>' +
+                        '<td>'+ element[key] +'</td>' +
+                        '</tr>' 
+                        );     
+                 });
+
+                    </script>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="prices" data-parallax="true">
+        <div class="container body">
+          <div class="row">
+      <table class="table table-dark" id="Removal">
+        <thead>
+        <th>Removal</th>
+          <tr>
+            <th scope="col">Treatment</th>
+            <th scope="col"></th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+            <script>
+                var Treatment = 
+                {"Removal":
+                [{"Soak off only":"70.00"},
+                {"Soak off with new application":"130.00"}
+                ]}                   
+                    var obj = Treatment["Removal"];
+                    obj.forEach((element, i) => {
+            console.log("obj", element);
+            var key =  [Object.keys(obj[i])][0][0];
+            $('#Removal tr:last')
+            .after(
+                '<tr>' +
+                '<td>'+ key +'</td>' +
+                '<td> R </td>' +
+                '<td>'+ element[key] +'</td>' +
+                '</tr>' 
+                );     
+         });
+
+            </script>
+        </tbody>
+      </table>
+</div>
+</div>
+</div>
+
+
+<div class="prices" data-parallax="true">
+    <div class="container body">
+      <div class="row">
+  <table class="table table-dark" id="Make_Up">
+    <thead>
+    <th>Make Up</th>
+      <tr>
+        <th scope="col">Treatment</th>
+        <th scope="col"></th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+        <script>
+            var Treatment = 
+            {"Make Up":
+            [{"Make Up Application":"400.00"},
+            {"Make Up Lesson":"600.00"}
+            ]}                 
+                var obj = Treatment["Make Up"];
+                obj.forEach((element, i) => {
+        console.log("obj", element);
+        var key =  [Object.keys(obj[i])][0][0];
+        $('#Make_Up tr:last')
+        .after(
+            '<tr>' +
+            '<td>'+ key +'</td>' +
+            '<td> R </td>' +
+            '<td>'+ element[key] +'</td>' +
+            '</tr>' 
+            );     
+     });
+
+        </script>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+
+<div class="prices" data-parallax="true">
+    <div class="container body">
+      <div class="row">
+  <table class="table table-dark" id="Manicures_and_Pedicures">
+    <thead>
+    <th>Manicures and Pedicures</th>
+      <tr>
+        <th scope="col">Treatment</th>
+        <th scope="col"></th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+        <script>
+            var Treatment = 
+            {"Manicures and Pedicures":
+            [{"Manicure (45min)	ladies":"170.00"},
+            {"                  gents":"180.00"},
+            {"Pedicure (45min)	ladies": "220.00"},
+            {"                  gents":"250.00"}
+            ]}               
+                var obj = Treatment["Manicures and Pedicures"];
+                obj.forEach((element, i) => {
+        console.log("obj", element);
+        var key =  [Object.keys(obj[i])][0][0];
+        $('#Manicures_and_Pedicures tr:last')
+        .after(
+            '<tr>' +
+            '<td>'+ key +'</td>' +
+            '<td> R </td>' +
+            '<td>'+ element[key] +'</td>' +
+            '</tr>' 
+            );     
+     });
+
+        </script>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+<div class="prices" data-parallax="true">
+    <div class="container body">
+      <div class="row">
+  <table class="table table-dark" id="Add_Ons">
+    <thead>
+    <th>Add Ons</th>
+      <tr>
+        <th scope="col">Treatment</th>
+        <th scope="col"></th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+        <script>
+            var Treatment = 
+            {"Add Ons":
+            [{"Own Nail Polish":"30.00"},
+            {"Salon Nail Polish":"70.00"},
+            {"Paraffin Wax":"70.00"},
+            {"French Nail Polish":"80.00"},
+            {"Foot Massage":"150.00"},
+            {"Gel Overlay":"170.00"},
+            {"Gel French Overlay":"180.00"}
+            ]}            
+                var obj = Treatment["Add Ons"];
+                obj.forEach((element, i) => {
+        console.log("obj", element);
+        var key =  [Object.keys(obj[i])][0][0];
+        $('#Add_Ons tr:last')
+        .after(
+            '<tr>' +
+            '<td>'+ key +'</td>' +
+            '<td> R </td>' +
+            '<td>'+ element[key] +'</td>' +
+            '</tr>' 
+            );     
+     });
+
+        </script>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+    <div>
+    <footer class="footer footer-default">
+      <div class="container">
+        <div class="copyright float-right">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <a href="#" >Daidas Beauty</a>
+        </div>
+      </div>
+    </footer>
+    </div>
+    </div>
+    <script src="//code.tidio.co/l1rsewehp8jv6bwzgqysm4ypazxjj0jq.js" async></script>
+  </body>
+</html>

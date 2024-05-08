@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="material-kit-master/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="material-kit-master/assets/img/lgc.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Daidas Beauty
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="material-kit-master/assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <!-- <link href="material-kit-master/assets/demo/demo.css" rel="stylesheet" /> -->
+      <!--   Core JS Files   -->
+      <script src="material-kit-master/assets/js/core/jquery.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="material-kit-master/assets/js/plugins/moment.min.js"></script>
+      <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+      <script src="material-kit-master/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+      <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+      <script src="material-kit-master/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+      <!--  Google Maps Plugin    -->
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="material-kit-master/assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+</head>
+
+<body class="landing-page sidebar-collapse">
+    <style>
+table {
+    font-family: Arial !important;
+    font-weight: lighter !important;
+}
+
+        .CompanySlogan {
+        color: #000;
+        background-color: #fff;
+        opacity: 60%;
+        float: right;
+        margin-top: 21px;
+        margin-left: 37px;
+        font-weight: bold;
+        max-width: 334px;
+        font-family: Arial;
+        font-size: 10px;
+        }
+
+        .navbar .navbar-brand {
+        position: relative;
+        color: inherit;
+        height: 50px;
+        font-size: 1.125rem;
+        line-height: 30px;
+        padding: 0.625rem 0;
+        margin-top: -67px !important;
+        }
+
+        .navbar {
+        border: 0;
+        border-radius: 3px;
+        padding: 0.625rem 0;
+        margin-bottom: 20px;
+        color: #555;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+        height: 118px !important;
+        }
+
+.prices.first{
+    margin-top: 125px;
+}
+        .prices{
+          background-color: #fff;
+          background-image:
+          linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+          linear-gradient(#eee .1em, transparent .1em);
+          background-size: 100% 1.2em;
+        }
+
+        /* .container.body{
+            margin-top: 900px;
+        } */
+
+        @media only screen and (max-width: 1199px) and (min-width: 992px) {
+          .CompanySlogan {
+            color: #000;
+            background-color: #fff;
+            opacity: 60%;
+            float: right;
+            margin-top: -41px;
+            margin-left: 37px;
+            font-weight: bold;
+            max-width: 334px;
+            font-family: Arial;
+            font-size: 8px;
+          }
+        }
+
+        @media only screen and (max-width: 535px) {
+        .CompanySlogan {
+        color: #000;
+        /* background-color: #fff;
+        opacity: 60%; */
+        float: right;
+        margin-top: 2px;
+        margin-left: 12px;
+        font-weight: bold;
+        /* max-width: 334px; */
+        font-family: Arial;
+        font-size: 7px;
+        width: 154px;
+        }
+        }
+        
+        /* @media only screen and (max-width: 360px) {
+        .container.body {
+        margin-top: 950px;
+        }
+        } */
+
+        html,body{
+        height: 100%
+        }
+
+
+            .navbar.navbar-transparent {
+            background-color: transparent !important;
+            box-shadow: none;
+            padding-top: 25px;
+            color: #000;
+            }
+            .content{
+                margin-top: 100px;
+            }
+
+            .overlayPage {
+            background-color: #f9f9f9;
+            /* width: 850px; */
+            /* margin: 25px; */
+            box-shadow: 1px 1px 2px 2px #ccc;
+            padding-left: 5px;
+            padding-right: 5px;
+            /* padding-top: 20px;
+            padding-bottom: 20px; */
+            margin-top: 20px;
+            }
+
+            .overlayPage p{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 21px;
+            font-family: Arial;
+            padding-left: 50px;
+            padding-right: 50px;
+            }
+
+            .table-school {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: arial;
+            font-weight: bold;
+            color: gray;
+            }
+
+           .table-school td:first-child {
+            text-align: center !important;
+            }
+
+            .content  h3 {
+            font-family: Arial;
+            text-align: center;
+            }
+
+            @media (max-width: 991px)
+            {
+            .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
+            background-color: #000;
+            }
+          }
+
+              .navbar.navbar-transparent {
+              background-color: white !important;
+              box-shadow: none;
+              padding-top: 25px;
+              color: #000;
+              }
+    </style>
+    <div class="allContainer">
+        <script>
+            $('.allContainer').height($(document).height());
+    </script>
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="material-kit-master/assets/img/lgc.png"></img>
+            <div class="CompanySlogan">
+                MAKE UP | NAILS | EYELASHES | FACIALS <br />
+                MASSAGES | WAXING | MICROBLADING
+            </div>
+            <div>
+                Daidas Beauty
+            </div>
+            <!-- <div>MAKE UP | NAILS | EYELASHES | MASSAGES | WAXING | MICROBLADING</div> -->
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                Services & Prices
+              </a>
+              <div class="dropdown-menu dropdown-with-icons">
+                <a href="nails_and_make_up.html" class="dropdown-item">
+                  NAILS & MAKE UP
+                </a>
+                <a href="eyelashes_and_facials.html" class="dropdown-item">
+                  EYELASHES & FACIALS
+                </a>
+                <a href="massages_and_waxing.html" class="dropdown-item">
+                  MASSAGES & WAXING
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beauty_school.html" >
+                BEAUTY SCHOOL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" >
+                GALLERY
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-form" >
+                CONTACT US
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://daidasbeauty.co.za/shop" >
+                SHOP
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim"  data-original-title="Follow us on Twitter" rel="nofollow">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/daidasbeauty"  data-original-title="Like us on Facebook" rel="nofollow">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/daidasbeauty"  data-original-title="Follow us on Instagram" rel="nofollow">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/channel/UCkKbX3R9-A_g_CAF3aOUDow"  data-original-title="Subscribe to our YouTube" rel="nofollow">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="prices" data-parallax="true">
+          <div class="container body">
+            <div class="row">
+              <div class="content" style="width: 100%;">
+                <div style="height: 20px;">
+                  </div>
+                <img src="school/accreditatio_badge.png" width="100%">
+                <div class="alert alert-success" role ="alert"  style="text-align: center; background-color: #a81494;">
+                  We are an accredited Beauty and Nail Technology training institution
+                </div>
+                <div class="overlayPage">
+          
+                  <div class="row">
+                  <table class="table table-dark" id="NailTraining">
+                    <thead>
+                    <th>Nail Training</th>
+                      <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col"></th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <script>
+                            var Training = {
+                                "NailTraining":[
+                                {"Complete Nail Course":"9 000.00", "Duration": "8 Days"},
+                                {"Acrylic Liquid Nails":"4 800.00", "Duration": "2 Days"},
+                                {"Gel Polish":"2 300.00", "Duration": "1 Day"},
+                                {"Acrylic Dip":"3 200.00", "Duration": "1 Day"},
+                                {"Poligel/Powder Gel Workshop":"1 500.00", "Duration": "1 Day"},
+                                {"Acrylic Reserve Build Workshop":"1 500.00", "Duration": "1 Day"},
+                                {"Electric Nail File/Drill Workshop":"1 500.00", "Duration": "1 Day"},
+                                {"Nail Art Workshop":"1 500.00", "Duration": "1 Day"}
+                                ]}
+                                var obj = Training.NailTraining;
+                                obj.forEach((element, i) => {
+                        console.log("obj", element);
+                        var key =  [Object.keys(obj[i])][0][0];
+                        var key2 = [Object.keys(obj[i])][0][1];
+                        console.log("Key 2", key2);
+                        $('#NailTraining tr:last')
+                        .after(
+                            '<tr>' +
+                            '<td>'+ key +'</td>' +
+                            '<td> R </td>' +
+                            '<td style="white-space: nowrap;">'+ element[key] +'</td>' +
+                            '<td>'+ element[key2] +'</td>' +
+                            '</tr>' 
+                            );     
+                     });
+    
+                        </script>
+                    </tbody>
+                  </table>
+
+                  <table class="table table-dark" id="BeautyTraining">
+                    <thead>
+                    <th>Beauty Training</th>
+                      <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col"></th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <script>
+                            var Training = {
+                                "BeautyTraining":[
+                                {"Facial Course (Own towel)":"5 000.00", "Duration": "2 Days"},
+                                {"Back and Neck Massage (Own client and bib/towel)":"3 000.00", "Duration": "3 Days"},
+                                {"Manicure and Pedicure (Own bowls and towels)":"3 300.00", "Duration": "2 Days"},
+                                {"Make-up":"5 500.00", "Duration": "2 Days"},
+                                {"Waxing, Tinting and Shaping":"5 000.00", "Duration": "3 Days"},
+                                {"How To Start and Manage a Beauty and Nail Business":"3 300.00", "Duration": "3 Days"}
+                                ]}
+                                var obj = Training.BeautyTraining;
+                                obj.forEach((element, i) => {
+                        console.log("obj", element);
+                        var key =  [Object.keys(obj[i])][0][0];
+                        var key2 = [Object.keys(obj[i])][0][1];
+                        console.log("Key 2", key2);
+                        $('#BeautyTraining tr:last')
+                        .after(
+                            '<tr>' +
+                            '<td>'+ key +'</td>' +
+                            '<td> R </td>' +
+                            '<td style="white-space: nowrap;">'+ element[key] +'</td>' +
+                            '<td>'+ element[key2] +'</td>' +
+                            '</tr>' 
+                            );     
+                     });
+    
+                        </script>
+                    </tbody>
+                  </table>
+
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>        
+          <div>
+              <footer class="footer footer-default">
+                <div class="container">
+                  <div class="copyright float-right">
+                    &copy;
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>
+                    <a href="#" >Daidas Beauty</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+    </div>
+    <script src="//code.tidio.co/l1rsewehp8jv6bwzgqysm4ypazxjj0jq.js" async></script>
+  </body>
+</html>
