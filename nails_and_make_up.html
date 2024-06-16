@@ -243,7 +243,7 @@ table {
         <div class="row">
             <table class="table table-dark" id="Tips_with_Acrylic_or_Gel">
                 <thead>
-                <th>Tips with Acrylic or Gel</th>
+                <th>Nail Tips Overlays with Acrylic or Gel Colours</th>
                   <tr>
                     <th scope="col">Treatment</th>
                     <th scope="col"></th>
@@ -254,13 +254,20 @@ table {
                     <script>
                         var Treatment = {"Tips with Acrylic or Gel":
                         [
-                        {"French Tips (1hr)":"300.00"},
-                        {"Pearl Tips (1hr)":"320.00"},
-                        {"Colour Tips (1hr)":"320.00"},
-                        {"Natural Tips (1hr)":"350.00"},
-                        {"Stiletto Tips (1hr)":"350.00"},
-                        {"Tips with French Overlays (1hr)":"350.00"},
-                        {"Nails with Tips + Acrylic + Gel":"420.00"},
+                        {"French Tips":"350.00"},
+                        {"Natural Nail Colour Overlay":"350.00"},
+                        {"Pearl Tips":"370.00"},
+                        {"Smile Line White Overlay":"370.00"},
+                        {"Colour Tips":"370.00"},
+                        {"Natural Tips":"400.00"},
+                        {"Stiletto Tips":"400.00"},
+                        {"Tips With French Overlays":"400.00"},
+                        {"Polygel, Natural Nail, Nail Overlay":"400.00"},
+                        {"Colour Overlays - Tip Application":"400.00"},
+                        {"Natural Tips + French Overlay":"450.00"},
+                        {"Full Set of Sculptured Nails":"450.00"},
+                        {"Nails With Tips, Acrylic Gel":"470.00"},
+                        {"Full Set of Sculptured Nails With Gel":"530.00"}
                         ]}
                             var obj = Treatment["Tips with Acrylic or Gel"];
                             obj.forEach((element, i) => {
@@ -283,55 +290,53 @@ table {
         </div>
       </div>
 
-
-              <div class="prices" data-parallax="true">
-                <div class="container body">
-                  <div class="row">
-                    <table class="table table-dark" id="Overlays_With_Acrylic_colours_or_Gel_Colours">
-                <thead>
-                <th>Overlays - With Acrylic colours or Gel Colours</th>
-                  <tr>
-                    <th scope="col">Treatment</th>
-                    <th scope="col"></th>
-                    <th scope="col">Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <script>
-                        var Treatment = {"Overlays - With Acrylic colours or Gel Colours":
-                        [{"Natural Nail Colour Overlay (1hr)":"300.00"},
-                        {"Smile Line - White Overlay (1hr)":"320.00"},
-                        {"Colour Overlay - Tip Application (1hr)":"350.00"},
-                        {"Natural Tips + French Tip Overlay (1hr)":"370.00"},
-                        {"Full Set Sculptured Nails (1hr 30min)":"450.00"},
-                        {"Tips, Acrylic & Gel Color Overlays":"420.00"},
-                        {"Tips, Acrylic & Nail Polish":"380.00"}
-                        ]
-                        }
-                            var obj = Treatment["Overlays - With Acrylic colours or Gel Colours"];
-                            obj.forEach((element, i) => {
-                    console.log("obj", element);
-                    var key =  [Object.keys(obj[i])][0][0];
-                    $('#Overlays_With_Acrylic_colours_or_Gel_Colours tr:last')
-                    .after(
-                        '<tr>' +
-                        '<td>'+ key +'</td>' +
-                        '<td> R </td>' +
-                        '<td>'+ element[key] +'</td>' +
-                        '</tr>' 
-                        );     
-                 });
-
-                    </script>
-                </tbody>
-              </table>
-            </div>
+      <div class="prices first" data-parallax="true">
+        <div class="container body">
+          <div class="row">
+              <table class="table table-dark" id="Toe_Overlays_Gel_And_Acrylic">
+                  <thead>
+                  <th>Toe Overlays Gel & Acrylic</th>
+                    <tr>
+                      <th scope="col">Treatment</th>
+                      <th scope="col"></th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <script>
+                          var Treatment = {"Toe Overlays Gel & Acrylic<":
+                          [
+                          {"Toe Nails Buff Shine Cutex":"150.00"},
+                          {"Nail Polish Application":"200.00"},
+                          {"Gel Colour Toes Overlay":"250.00"},
+                          {"French Toes Overlay":"330.00"},
+                          {"Nail Tips on Toes":"350.00"},
+                          {"Toe Nails Sculpture":"350.00"}
+                          ]}
+                              var obj = Treatment["Toe Overlays Gel & Acrylic<"];
+                              obj.forEach((element, i) => {
+                      console.log("obj", element);
+                      var key =  [Object.keys(obj[i])][0][0];
+                      $('#Toe_Overlays_Gel_And_Acrylic tr:last')
+                      .after(
+                          '<tr>' +
+                          '<td>'+ key +'</td>' +
+                          '<td> R </td>' +
+                          '<td>'+ element[key] +'</td>' +
+                          '</tr>' 
+                          );     
+                   });
+  
+                      </script>
+                  </tbody>
+                </table>
+              </div>
+          </div>
         </div>
-      </div>
 
-              <div class="prices" data-parallax="true">
-                <div class="container body">
-                  <div class="row">
+          <div class="prices" data-parallax="true">
+            <div class="container body">
+              <div class="row">
               <table class="table table-dark" id="Nail_Art">
                 <thead>
                 <th>Nail Art</th>
@@ -345,9 +350,14 @@ table {
                     <script>
                         var Treatment = {"Nail Art":
                             [
-                            {"Nail art sticker (per finger)":"10.00"},
-                            {"Nail Art Stamp Disk":"20.00"},
-                            {"Nail Art with Rhinestones":"20.00"}
+                            {"Nail Art(Per Finger)":"40.00"},
+                            {"Nail Art Stamping":"20.00"},
+                            {"Nail Art With Rhinestones":"20.00"},
+                            {"Nail Art Freehand":"40.00"},
+                            {"Nail Art Stamping Disk/Foil(Per Finger)":"20.00"},
+                            {"Nail Art With 3 + Rhinestones":"35.00"},
+                            {"Nail Art Encapsulated":"40.00"},
+                            {"Sculpting Per Toe":"30.00"}
                             ]}
                             var obj = Treatment["Nail Art"];
                             obj.forEach((element, i) => {
@@ -386,10 +396,11 @@ table {
                     <script>
                         var Treatment = 
                         {"Maintenance on Gel & Acrylic":
-                        [{"2 week fill on clear/french pink":"230.00"},
-                        {"2 week fill on colour & acrylic":"250.00"},
-                        {"2 Week fill with different colour on gel or acrylic":"280.00"},
-                        {"Nail Replacements":"40.00"}
+                        [{"2 Week Fill on Clear/French Pink":"350.00"},
+                        {"2 Week Fill on Colour & Acrylic":"350.00"},
+                        {"2 Week Fill With Different Colour on Gel or Acrylic":"350.00"},
+                        {"Nail Replacements":"40.00"},
+                        {"File Off Gel or Soak Off Gel Colour":"100.00"}
                         ]}                       
                             var obj = Treatment["Maintenance on Gel & Acrylic"];
                             obj.forEach((element, i) => {
@@ -429,8 +440,8 @@ table {
             <script>
                 var Treatment = 
                 {"Removal":
-                [{"Soak off only":"70.00"},
-                {"Soak off with new application":"130.00"}
+                [{"Soak Off Only(Buff & Shine)":"150.00"},
+                {"Soak Off With New Application":"100.00"}
                 ]}                   
                     var obj = Treatment["Removal"];
                     obj.forEach((element, i) => {
@@ -470,8 +481,8 @@ table {
         <script>
             var Treatment = 
             {"Make Up":
-            [{"Make Up Application":"400.00"},
-            {"Make Up Lesson":"600.00"}
+            [{"Make Up Application":"600.00"},
+            {"Make Up Lesson(With Own Product)":"850.00"}
             ]}                 
                 var obj = Treatment["Make Up"];
                 obj.forEach((element, i) => {
@@ -511,10 +522,10 @@ table {
         <script>
             var Treatment = 
             {"Manicures and Pedicures":
-            [{"Manicure (45min)	ladies":"170.00"},
-            {"                  gents":"180.00"},
-            {"Pedicure (45min)	ladies": "220.00"},
-            {"                  gents":"250.00"}
+            [{"Manicure":"200.00"},
+            {"Pedicure": "250.00"},
+            {"Pedi Peel": "300.00"},
+            {"Pedi Peel With Cut, Buff & Shine On Toes": "300.00"},
             ]}               
                 var obj = Treatment["Manicures and Pedicures"];
                 obj.forEach((element, i) => {
@@ -553,13 +564,13 @@ table {
         <script>
             var Treatment = 
             {"Add Ons":
-            [{"Own Nail Polish":"30.00"},
-            {"Salon Nail Polish":"70.00"},
-            {"Paraffin Wax":"70.00"},
-            {"French Nail Polish":"80.00"},
-            {"Foot Massage":"150.00"},
-            {"Gel Overlay":"170.00"},
-            {"Gel French Overlay":"180.00"}
+            [{"Own Nail Polish":"150.00"},
+            {"Parafin Wax/Moisture Lock":"200.00"},
+            {"Nails Polish":"150.00"},
+            {"French Nail Polish":"200.00"},
+            {"Gel Overlay":"180.00"},
+            {"Gel French Overlay":"200.00"},
+            {"Foot Massage":"180.00"}
             ]}            
                 var obj = Treatment["Add Ons"];
                 obj.forEach((element, i) => {

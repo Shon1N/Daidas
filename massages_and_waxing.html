@@ -253,15 +253,15 @@ table {
                     <script>
                         var Treatment = {"Body Massages":
                         [
-                        {"Foot Massage":"150.00"},
-                        {"Back Neck & Shoulder (30min)Ladies":"300.00"},
-                        {"Back Neck & Shoulder (30min)Gents":"350.00"},
-                        {"Hot Stones Back & Neck (30min)Ladies":"350.00"},
-                        {"Hot Stones Back & Neck (30min)Gents":"400.00"},
-                        {"Full Body Massage(60min)Ladies":"550.00"},
-                        {"Full Body Massage(90min)Ladies":"700.00"},
-                        {"Hot Stone Full Body Massage(60min)Ladies":"600.00"},
-                        {"Hot Stone Full Body Massage(90min)Ladies":"750.00"}
+                        {"Foot Massage":"180.00"},
+                        {"Back Neck & Shoulder (30min)":"350.00"},
+                        {"Back Neck & Shoulder (45min)":"400.00"},
+                        {"Hot Stones Back & Neck (30min)":"450.00"},
+                        {"Hot Stones Back & Neck (45min)":"450.00"},
+                        {"Full Body Massage(60min)":"600.00"},
+                        {"Full Body Massage(90min)":"850.00"},
+                        {"Hot Stone Full Body Massage(60min)":"700.00"},
+                        {"Hot Stone Full Body Massage(90min)":"900.00"}
                         ]}
                             var obj = Treatment["Body Massages"];
                             obj.forEach((element, i) => {
@@ -299,20 +299,22 @@ table {
                 </thead>
                 <tbody>
                     <script>
-                        var Treatment = {"Ladies Waxing":
-                            [{"Eyebrows":"80.00"},
-                            {"Lip":"80.00"},
-                            {"Chin":"80.00"},
-                            {"Underarm":"110.00"},
-                            {"Full Arm with Hands":"160.00"},
-                            {"Half Leg":"190.00"},
-                            {"Full Leg":"280.00"},
-                            {"Full Bikini":"250.00"},
-                            {"Full Back":"250.00"},
-                            {"Full Face":"250.00"},
-                            {"Full Chest":"230.00"}
+                        var Treatment = {"Waxing":
+                            [{"Eyebrows":"100.00"},
+                            {"Lip":"100.00"},
+                            {"Chin":"100.00"},
+                            {"Underarm":"150.00"},
+                            {"Full Arm with Hands":"300.00"},
+                            {"Half Leg":"200.00"},
+                            {"Full Leg":"400.00"},
+                            {"Full Bikini":"400.00"},
+                            {"Vajacial":"700.00"},
+                            {"Full Back":"350.00"},
+                            {"Full Face":"350.00"},
+                            {"Full Chest":"350.00"},
+                            {"Add Wax":"200.00"}
                             ]}
-                            var obj = Treatment["Ladies Waxing"];
+                            var obj = Treatment["Waxing"];
                             obj.forEach((element, i) => {
                     console.log("obj", element);
                     var key =  [Object.keys(obj[i])][0][0];
@@ -336,9 +338,9 @@ table {
               <div class="prices" data-parallax="true">
                 <div class="container body">
                   <div class="row">
-              <table class="table table-dark" id="Gents_Waxing">
+              <table class="table table-dark" id="Permanent_Hair_Removal">
                 <thead>
-                <th>Gents Waxing</th>
+                <th>Permanent Hair Removal (Epliwax)</th>
                   <tr>
                     <th scope="col">Treatment</th>
                     <th scope="col"></th>
@@ -347,22 +349,27 @@ table {
                 </thead>
                 <tbody>
                     <script>
-                        var Treatment = {"Gents Waxing":
+                        var Treatment = {"Permanent Hair Removal":
                             [
-                            {"Full Face":"300.00"},
-                            {"Stomach":"230.00"},
-                            {"Full Chest":"330.00"},
-                            {"Full Back":"330.00"},
-                            {"Brazilian":"430.00"},
-                            {"Full Leg":"330.00"},
-                            {"Full Arm":"230.00"},
-                            {"Underarm":"130.00"}
+                            {"Eyebrows":"350.00"},
+                            {"Lip":"250.00"},
+                            {"Chin":"450.00"},
+                            {"Full Face":"650.00"},
+                            {"Underarm":"450.00"},
+                            {"Full Bikini":"850.00"},
+                            {"Full Chest":"550.00"},
+                            {"Full Back":"650.00"},
+                            {"Half Leg":"750.00"},
+                            {"Full Leg":"1050.00"},
+                            {"Full Arms & Hands":"550.00"},
+                            {"Stomach":"550.00"},
+                            {"Buttocks":"650.00"}
                             ]}
-                            var obj = Treatment["Gents Waxing"];
+                            var obj = Treatment["Permanent Hair Removal"];
                             obj.forEach((element, i) => {
                     console.log("obj", element);
                     var key =  [Object.keys(obj[i])][0][0];
-                    $('#Gents_Waxing tr:last')
+                    $('#Permanent_Hair_Removal tr:last')
                     .after(
                         '<tr>' +
                         '<td>'+ key +'</td>' +
